@@ -23,17 +23,23 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, '../client/dist')));
+// app.use(express.static(path.join(__dirname, '../client/dist')));
 
 // API routes
 app.use("/api/auth", authRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use("/api/users", userRoutes);
 
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html')); // Updated path for Vite
-  });
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html')); // Updated path for Vite
+//   });
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on ${process.env.PORT}`);
