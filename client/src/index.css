@@ -1,0 +1,116 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* font-family: "Manrope", serif; */
+  font-family: "Playwrite AU TAS Guides", serif;;
+  background-color: #f7f7f7;
+}
+
+.heading{
+  font-size: 1.75rem;
+  font-weight: bold;
+  /* text-align: center; */
+}
+.subheading{
+  font-size: 1rem;
+  font-weight: bold;
+  /* text-align: center; */
+  color: #8d99ae;
+  margin-bottom: 0;
+}
+
+.card-bg {
+  background-image: url("./assets/bg/bg1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.contentbg,
+.aboutbg,
+.aboutcontbg,
+.contactbg,
+.servicebg,
+.dmbg,
+.repairbg,
+.itservicebg,
+.itbg {
+  background-image: url("./assets/images/contentbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.aboutbg {
+  background-image: url("./assets/images/aboutbg.jpg");
+}
+.aboutcontbg{
+  background-image: url("./assets/images/aboutcontbg.jpg");
+}
+.contactbg{
+  background-image: url("./assets/images/contactcontbg.jpg");
+}
+.servicebg {
+  background-image: url("./assets/images/servicebg.jpg");
+}
+.itservicebg{
+  background-image: url("./assets/images/itservicebg.jpg");
+}
+.repairbg{
+  background-image: url("./assets/images/repiarbg.jpg");
+}
+.dmbg {
+  background-image: url("./assets/images/dmbg.jpg");
+}
+.itbg {
+  background-image: url("./assets/images/itbg.jpg");
+}
+
+.lnbg {
+  background: rgb(195, 198, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(195, 198, 204, 1) 0%,
+    rgba(211, 214, 218, 0.6167717086834734) 49%,
+    rgba(228, 232, 233, 1) 100%
+  );
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: #8d99ae;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+

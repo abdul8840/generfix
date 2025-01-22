@@ -1,0 +1,238 @@
+/* App.css */
+.html{
+  scroll-behavior: smooth;
+}
+
+.Cardcontainer {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.image {
+  width: 100px;
+  height: 420px;
+  margin: 10px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 3px 8px rgb(1, 52, 28);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.image:hover {
+  width: 300px;
+  cursor: pointer;
+}
+
+.image:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, black 0%, black 10%, transparent);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.about {
+  color: aliceblue;
+  position: absolute;
+  align-items: flex-end;
+  width: 300px;
+  height: 58%;
+  padding: 0 35px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.image:hover .about {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.name {
+  font-size: 30px;
+  line-height: 25px;
+  color: rgb(230, 249, 108);
+  margin: 10px 0;
+}
+
+.rotate_name {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  transform: rotate(90deg);
+  width: auto; /* Let width adjust to content */
+  height: auto; /* Let height adjust to content */
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(230, 249, 108);
+  display: flex;
+  flex-direction: column; /* Stacks text vertically */
+  justify-content: flex-end; /* Align text to the bottom */
+  align-items: flex-start; /* Align text to the start (left in this case) */
+  text-align: start;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 100px; /* Position the text container at the bottom */
+}
+
+
+.image:hover .rotate_name{
+  display: none;
+}
+
+.mo {
+  color: rgb(195, 163, 217);
+  margin-bottom: 4px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+  .Cardcontainer {
+    height: auto; /* Adjust the height */
+    padding: 20px; /* Add some padding */
+  }
+
+  .image {
+    width: 350px; /* Set width of image to 350px */
+  }
+
+  /* Remove hover effects for small screens */
+  .image:hover {
+    width: 350px; /* Keep hover size same as normal size */
+  }
+
+  /* Always show the background overlay on small screens */
+  .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, black 0%, black 10%, transparent);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .about {
+    width: 350px; /* Adjust text content width to match image */
+    padding: 0 20px; /* Adjust padding */
+    opacity: 1; /* Make text always visible */
+    transform: translateX(0); /* Make text appear without hover */
+  }
+
+  .name {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .rotate_name{
+    display: none;
+  }
+
+  .mo {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .movies p {
+    font-size: 14px; /* Reduce movie name font size */
+  }
+
+  .card {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+
+  /* Optionally, reduce margins and padding for better fit */
+  .image {
+    margin: 8px; /* Adjust margin between images */
+  }
+}
+
+/* For even smaller screens (like mobile phones) */
+@media screen and (max-width: 480px) {
+  .image {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Remove hover effects for small screens */
+  .image:hover {
+    width: 300px; /* Keep hover size same as normal size */
+  }
+
+  /* Always show the background overlay on small screens */
+  .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, black 0%, black 10%, transparent);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .about {
+    width: 300px; /* Adjust text content width to match image */
+    padding: 0 15px; /* Adjust padding */
+    opacity: 1; /* Make text always visible */
+    transform: translateX(0); /* Make text appear without hover */
+  }
+
+  .name {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .image:hover .rotate_name{
+    display: none;
+  }
+
+  .mo {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .movies p {
+    font-size: 12px; /* Further reduce movie name font size */
+  }
+
+  .Cardcontainer {
+    padding: 5px; /* Less padding for very small screens */
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .image {
+    margin: 5px; /* Smaller margin on small screens */
+  }
+}
