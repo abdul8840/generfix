@@ -59,7 +59,7 @@ const HomeBanner = () => {
             </div>
 
             <div className="">
-              <div className="flex gap-4 flex-row text-white">
+              <div className="flex flex flex-col sm:flex-row text-center gap-4 text-white">
                 <Link
                   to='/appointment'
                   className="block bg-transparent border-2 border-solid text-black border-green300 hover:bg-green300 hover:text-white transition-all font-bold p-1 rounded-xl py-2 px-5"

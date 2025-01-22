@@ -75,7 +75,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             </Link>
           </div>
           <div className="flex items-center">
-            <Link to="tel:5541251234" className="text-sm text-green300 font-semibold dark:text-white hover:underline">
+            <Link to="tel:5541251234" className="text-sm text-green300 font-semibold dark:text-white hover:underline hidden sm:block">
               (+1 (786) 505-6525)
             </Link>
             {currentUser ? (

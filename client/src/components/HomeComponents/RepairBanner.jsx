@@ -24,7 +24,7 @@ const RepairBanner = () => {
 
             <p className="text-[14px] md:text-[16px] text-green300 text-bold">At Generations Fix, our mission is simple: to provide reliable, fast, and affordable repair services that keep your devices performing at their best. We know how important it is to get your devices back in your hands quickly, which is why we offer a swift turnaround without compromising on quality. No problem is too big or small for us to fix, and we guarantee that your device is in good hands. Let us help you get back on track with repairs that you can trust!</p>
 
-            <div className="flex gap-4 text-black mt-10">
+            <div className="flex flex-col sm:flex-row text-center gap-4 text-black mt-10">
               <Link
                 to='/appointment'
                 className=" bg-transparent border-2 border-solid border-green300 hover:bg-green300 hover:text-white transition-all font-bold p-1 rounded-xl py-2 px-5"
