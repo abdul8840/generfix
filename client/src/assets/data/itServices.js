@@ -8,7 +8,7 @@ import NFSImgAbt from '../../assets/images/nsf1.jpg'
 import NFSImgCont from '../../assets/images/nsf2.jpg'
 
 import CCSImgAbt from '../../assets/images/ccs1.jpg'
-import CCSImgCont from '../../assets/images/CCS2.jpg'
+import CCSImgCont from '../../assets/images/ccs2.jpg'
 
 import LANImgAbt from '../../assets/images/lan1.jpg'
 import LANImgCont from '../../assets/images/lan2.jpg'
