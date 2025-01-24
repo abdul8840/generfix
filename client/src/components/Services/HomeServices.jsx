@@ -18,7 +18,7 @@ const HomeServices = () => {
         <div className="flex flex-wrap justify-between mb-8 pb-2">
           <div className="">
             <p className="text-[14px] text-green300 font-bold">Our Services</p>
-            <h2 className="text-3xl text-headingColor font-bold">Check Out <span className="text-green300">Our</span> Popular <span className="text-green300">Services</span></h2>
+            <h2 className="text-3xl text-headingColor font-bold">Check Out <span className="text-green300">Our</span> <span className="text-green300">Services</span></h2>
           </div>
           <div className="">
             <Link to="/about">

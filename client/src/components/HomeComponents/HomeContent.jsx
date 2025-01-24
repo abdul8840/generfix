@@ -50,7 +50,7 @@ const HomeContent = () => {
                   )}
                 </h2>
                 <span className="w-[50px] h-2 rounded-full block mt-[-16px] mx-auto" style={{ backgroundColor: item.bgColor }}></span>
-                <p className="text-[11px] sm:text-[13px] md:text-[14px] xl:[yext-20] text-green300 font-bold">
+                <p className="text-[11px] sm:text-[13px] md:text-[14px] xl:[yext-20] text-white font-bold">
                   {item.desc}
                 </p>
               </div>

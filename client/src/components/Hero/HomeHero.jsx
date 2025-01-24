@@ -29,7 +29,7 @@ const HomeHero = () => {
     {
       src: Image3,
       heading: "Your Growth, Our Mission",
-      heading2: "Want to Grow Your Business? We’ve Got the Perfect Digital Marketing Solutions!",
+      heading2: "Want to Grow Your Business? We’ve Got the Perfect Web Designing & Digital Marketing Solutions!",
       description: "Maximize your online presence with data-driven digital marketing solutions, from targeted ads to conversion optimization, to ensure measurable growth.",
       buttonText: "Start Now",
       buttonLink: "/digital-marketing-services"

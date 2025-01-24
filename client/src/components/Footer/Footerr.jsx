@@ -12,7 +12,7 @@ const Footerr = () => {
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="md:max-w-[500px]">
             <div className="flex items center justify-center md:justify-start"><img src={Logo} className="w-[200px]" alt="" /></div>
-            <p className="mt-5 text-green300 text-[14px] mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quam ducimus totam cum ab minus in ipsa at ut fuga.</p>
+            <p className="mt-5 text-green300 text-[14px] mb-5 text-center">We make IT happen</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
